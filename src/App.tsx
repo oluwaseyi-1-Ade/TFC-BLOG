@@ -1,8 +1,8 @@
-import Layout from "./Components/Layout";
+import AppRoutes from "./router/Index";
 
 const App = () => {
   return (
-    <Layout />
+    <AppRoutes />
   )
 }
 
