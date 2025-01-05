@@ -2,6 +2,7 @@ import Logo from "../assets/svg/Logo.svg";
 import SearchIcon from "../assets/svg/search-icon.svg";
 import Switch from "../assets/imgs/Switch.png";
 import Menu from "../assets/svg/menu.svg";
+import closeBtn from "../assets/svg/closeBtn.svg"
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 
@@ -102,9 +103,11 @@ const Navbar = () => {
                 </nav>
 
                 <div className={`${menu}
-                    absolute right-0 left-0 h-[100vh] top-0 flex flex-col gap-2 bg-black bg-opacity-80 items-center justify-center`}
+                    absolute right-0 left-0 h-[100vh] top-0 flex flex-col gap-2 bg-black bg-opacity-80 items-center justify-center`}>
 
-                >
+                    <div onClick={handleClick} >
+                        <img src={closeBtn} alt="cancel" className="h-[45px]" />
+                    </div>
                     <NavLink
                         end
                         to="/"
