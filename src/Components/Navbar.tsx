@@ -111,34 +111,34 @@ const Navbar = () => {
                     <NavLink
                         end
                         to="/"
-                        className="text-white py-3 text-[25px]"
+                        className="text-white py-3 text-[20px]"
                         onClick={() => handleClick()}>
                         Home
                     </NavLink>
                     <NavLink
                         to="/blog-form"
-                        className="text-white py-3 text-[25px]"
+                        className="text-white py-3 text-[20px]"
                         onClick={() => handleClick()}
                     >
                         Blog
                     </NavLink>
                     <NavLink
                         to="/single-post"
-                        className="text-white py-3 text-[25px]"
+                        className="text-white py-3 text-[20px]"
                         onClick={() => handleClick()}
                     >
                         Single Post
                     </NavLink>
                     <NavLink
                         to="/pages"
-                        className="text-white py-3 text-[25px]"
+                        className="text-white py-3 text-[20px]"
                         onClick={() => handleClick()}
                     >
                         Pages
                     </NavLink>
                     <NavLink
                         to="/author-page"
-                        className="text-white py-3 text-[25px]"
+                        className="text-white py-3 text-[20px]"
                         onClick={() => handleClick()}
                     >
                         Contact
