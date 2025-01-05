@@ -13,12 +13,12 @@ const Blog = () => {
                     <div className="font-Poppins">
                         <div className="mt-4">
                             <label htmlFor="title" className="font-normal text-sm text-[#4E4958]">Title</label>
-                            <input type="text" className="w-full h-[40px] bg-transparent mt-3 rounded-lg border border-[#E6E6F0] outline-none text-[#FAFAFC]" />
+                            <input type="text" className="w-full h-[40px] bg-transparent mt-3 rounded-lg border border-[#E6E6F0] outline-none text-[#4E4958]" />
                         </div>
 
                         <div className="mt-4 w-full">
                             <label htmlFor="title" className="font-normal text-sm text-[#4E4958]">Description</label><br />
-                            <textarea className="w-full h-[200px] mt-2 bg-transparent rounded-lg border border-[#E6E6F0] outline-none text-[#FAFAFC]"></textarea>
+                            <textarea className="w-full h-[200px] mt-2 bg-transparent rounded-lg border border-[#E6E6F0] outline-none text-[#4E4958]"></textarea>
                         </div>
 
                         <button className="bg-blueBackground w-full px-10 py-[15px] rounded-lg text-white text-base font-semibold mt-12">
