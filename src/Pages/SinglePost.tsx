@@ -8,7 +8,7 @@ const SinglePost = () => {
         <div className="max-w-[820px] w-full mx-auto px-5">
             <div id="headers" className="w-full">
                 <h3 className="w-[105px] mb-5 font-medium text-sm text-white rounded-md px-[10px] py-1 bg-blueBackground">Technology</h3>
-                <h2 className="font-semibold text-4xl text-[#181A2A] mb-3">
+                <h2 className="font-semibold text-lg md:text-2xl lg:text-4xl text-[#181A2A] mb-3">
                     The Impact of Technology on the Workplace: How Technology is Changing
                 </h2>
                 <div className="flex items-center gap-5 text-[#696A75] text-base mt-5">
