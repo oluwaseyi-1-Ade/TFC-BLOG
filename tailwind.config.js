@@ -7,9 +7,12 @@ export default {
   theme: {
     extend: {
       fontFamily: {
+        Archivo: "Archivo",
         workSans: "Work Sans",
         inter: "Inter",
-        PlusJakartaSans: "Plus Jakarta Sans"
+        PlusJakartaSans: "Plus Jakarta Sans",
+        Poppins: "Poppins",
+        SourceSerif: "Source Serif 4"
       },
       maxWidth: {
         pageMaxWidth: "1220px",
