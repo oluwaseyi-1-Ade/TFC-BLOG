@@ -25,7 +25,7 @@ const Pages = () => {
                 <div id="pages-hero" className="relative w-full h-full rounded-xl p-10 md:bg-heroImage bg-cover bg-no-repeat">
                     <div className="md:absolute bottom-10 left-10 p-5 md:p-0 rounded-xl w-full font-workSans md:bg-transparent bg-[#181A2A]">
                         <h3 className="w-[105px] font-medium text-sm text-white rounded-md px-[10px] py-1 bg-blueBackground">Technology</h3>
-                        <h2 className="md:max-w-[600px] lg:max-w-[750px] w-full font-semibold text-lg sm:text-2xl md:text-4xl text-white mt-5">
+                        <h2 className="md:max-w-[600px] lg:max-w-[750px] w-full font-semibold text-base sm:text-xl md:text-3xl text-white mt-5">
                             The Impact of Technology on the Workplace: How Technology is Changing
                         </h2>
                         <div className="flex items-center gap-5 text-white text-base mt-5">
