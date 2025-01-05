@@ -106,7 +106,7 @@ const Navbar = () => {
                     absolute right-0 left-0 h-[100vh] top-0 flex flex-col gap-2 bg-black bg-opacity-80 items-center justify-center`}>
 
                     <div onClick={handleClick} >
-                        <img src={closeBtn} alt="cancel" className="h-[45px]" />
+                        <img src={closeBtn} alt="cancel" className="h-[36px]" />
                     </div>
                     <NavLink
                         end
