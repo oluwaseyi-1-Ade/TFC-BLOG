@@ -9,7 +9,7 @@ import { useDarkMode } from '../context/DarkModeContext';
 
 const Navbar = () => {
     const [menu, setMenu] = useState("hidden");
-    const { isDarkMode, toggleDarkMode } = useDarkMode();
+    // const { isDarkMode, toggleDarkMode } = useDarkMode();
 
     const handleClick = () => setMenu("hidden")
 
@@ -100,11 +100,11 @@ const Navbar = () => {
 
                         id="menu" className="flex gap-6 h-[35px] p-1 md:hidden">
                         <img src={Switch} alt="Switch" className="h-[30px]  cursor-pointer"
-                            onClick={() => {
-                                toggleDarkMode
-                                console.log("hello")
-                            }
-                            }
+                        // onClick={() => {
+                        //     toggleDarkMode
+                        //     console.log("hello")
+                        // }
+                        // }
                         />
                         <img src={Menu} alt="menu"
                             onClick={() => setMenu("block")

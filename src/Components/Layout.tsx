@@ -1,26 +1,26 @@
 import { Outlet } from 'react-router-dom'
 import Footer from './Footer'
 import Navbar from './Navbar';
-import { useEffect } from 'react';
-import { useDarkMode } from '../context/DarkModeContext';
+// import { useEffect } from 'react';
+// import { useDarkMode } from '../context/DarkModeContext';
 
 
 
 const Layout = () => {
 
-    const { isDarkMode } = useDarkMode();
+    // const { isDarkMode } = useDarkMode();
 
-    useEffect(() => {
-        const html = document.documentElement;
-        if (isDarkMode) {
-            html.classList.add('dark');
-        } else {
-            html.classList.remove('dark');
-        }
-    }, [isDarkMode]);
+    // useEffect(() => {
+    //     const html = document.documentElement;
+    //     if (isDarkMode) {
+    //         html.classList.add('dark');
+    //     } else {
+    //         html.classList.remove('dark');
+    //     }
+    // }, [isDarkMode]);
 
     return (
-        <div className={`${isDarkMode} min-h-screen w-full mx-auto flex flex-col`}>
+        <div className={`min-h-screen w-full mx-auto flex flex-col`}>
             <Navbar />
 
             <div className="flex-grow mt-[120px]">
