@@ -5,11 +5,9 @@ import Menu from "../assets/svg/menu.svg";
 import closeBtn from "../assets/svg/closeBtn.svg"
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
-import { useDarkMode } from '../context/DarkModeContext';
 
 const Navbar = () => {
     const [menu, setMenu] = useState("hidden");
-    // const { isDarkMode, toggleDarkMode } = useDarkMode();
 
     const handleClick = () => setMenu("hidden")
 
@@ -99,13 +97,7 @@ const Navbar = () => {
                     <div
 
                         id="menu" className="flex gap-6 h-[35px] p-1 md:hidden">
-                        <img src={Switch} alt="Switch" className="h-[30px]  cursor-pointer"
-                        // onClick={() => {
-                        //     toggleDarkMode
-                        //     console.log("hello")
-                        // }
-                        // }
-                        />
+                        <img src={Switch} alt="Switch" className="h-[30px]  cursor-pointer" />
                         <img src={Menu} alt="menu"
                             onClick={() => setMenu("block")
                             }
@@ -157,7 +149,6 @@ const Navbar = () => {
                     </NavLink>
                 </div>
 
-                <p className='p-10 text-black bg-white dark:text-white dark:bg-black'>hello World</p>
             </div>
         </div >
     );
