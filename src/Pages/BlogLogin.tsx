@@ -1,4 +1,4 @@
-function LoginPage() {
+function BlogLogin() {
     return (
         <div
             className="relative max-w-7xl mx-auto my-44 h-[37.5rem] rounded-xl bg-cover"
@@ -40,4 +40,4 @@ function LoginPage() {
     );
 }
 
-export default LoginPage;
+export default BlogLogin;
