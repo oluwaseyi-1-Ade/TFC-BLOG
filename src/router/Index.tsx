@@ -5,7 +5,7 @@ import AuthorPage from "../Pages/AuthorPage";
 import Pages from "../Pages/Pages";
 import SinglePost from "../Pages/SinglePost";
 import Blog from "../Pages/Blog";
-import LoginPage from "../pages/login";
+import LoginPage from "../Pages/login";
 
 const AppRoutes = () => {
   return (
