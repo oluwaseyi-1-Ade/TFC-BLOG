@@ -16,7 +16,7 @@ import User5 from "../assets/imgs/cardImages/user5.png";
 
 const Cards = () => {
     return (
-        <div className="max-w-pageMaxWidth w-full mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 bg-white">
+        <div className="max-w-pageMaxWidth w-full mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 bg-white dark:bg-black">
 
             {
                 cards.map((card) => (
@@ -28,15 +28,15 @@ const Cards = () => {
                                 Technology
                             </p>
 
-                            <h2 className="max-w-[344px] font-semibold text-xl md:text-2xl text-[#181A2A] mt-5">
+                            <h2 className="max-w-[344px] font-semibold text-xl md:text-2xl text-[#181A2A] dark:text-white mt-5">
                                 {card.title}
                             </h2>
-                            <div className="flex items-center gap-5  text-[#97989F] text-base mt-5">
+                            <div className="flex items-center gap-2 md:gap-5  text-[#97989F] text-base mt-5">
                                 <p className="flex items-center gap-3">
                                     <img src={card.userImg} alt="jason" className="w-[36px]" />
-                                    <span className="font-medium">{card.name}</span>
+                                    <span className="font-normal md:font-medium text-sm md:text-base">{card.name}</span>
                                 </p>
-                                <p className="font-normal">
+                                <p className="font-normal md:font-light text-xs md:text-base">
                                     {card.date}
                                 </p>
                             </div>

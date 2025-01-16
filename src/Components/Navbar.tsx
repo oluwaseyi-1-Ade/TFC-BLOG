@@ -1,6 +1,7 @@
 import Logo from "../assets/svg/Logo.svg";
 import SearchIcon from "../assets/svg/search-icon.svg";
 import Switch from "../assets/imgs/Switch.png";
+import DarkBtn from "../assets/svg/dark-mode.svg";
 import Menu from "../assets/svg/menu.svg";
 import closeBtn from "../assets/svg/closeBtn.svg"
 import { NavLink } from "react-router-dom";
@@ -8,8 +9,13 @@ import { useState } from "react";
 
 const Navbar = () => {
     const [menu, setMenu] = useState("hidden");
+    const [darkMode, setDarkMode] = useState("hidden")
 
-    const handleClick = () => setMenu("hidden")
+    const handleClick = () => setMenu("hidden");
+
+    // const toggleDarkMode = () => {
+    //     // document.documentElement.classList.toggle("dark");
+    // }
 
     return (
         <div className="relative">
@@ -87,17 +93,53 @@ const Navbar = () => {
                             />
                             <img src={SearchIcon} alt="Search-icon" />
                         </div>
-                        <img
-                            src={Switch}
-                            alt="Switch"
-                            className="h-[30px] hidden md:flex"
-                        />
+                        <div className="hidden md:flex">
+                            <img src={Switch} id="light" alt="Switch" className={`h-[30px] cursor-pointer`}
+                                onClick={
+                                    () => {
+                                        document.documentElement.classList.add("dark");
+                                        document.getElementById("light")?.classList.add("hidden")
+                                        setDarkMode("flex");
+                                    }
+                                }
+                            />
+                            <img src={DarkBtn} alt="Switch" className={`h-[35px] w-[49.64px] ${darkMode} cursor-pointer`}
+                                onClick={
+                                    () => {
+                                        document.documentElement.classList.remove("dark");
+                                        document.getElementById("light")?.classList.remove("hidden")
+                                        setDarkMode("hidden");
+                                    }
+                                }
+                            />
+                        </div>
                     </div>
 
                     <div
-
                         id="menu" className="flex gap-6 h-[35px] p-1 md:hidden">
-                        <img src={Switch} alt="Switch" className="h-[30px]  cursor-pointer" />
+
+                        <div>
+                            <img src={Switch} id="slight" alt="Switch" className={`h-[30px] cursor-pointer`}
+                                onClick={
+                                    () => {
+                                        document.documentElement.classList.add("dark");
+                                        document.getElementById("slight")?.classList.add("hidden")
+                                        setDarkMode("flex");
+                                    }
+                                }
+                            />
+                            <img src={DarkBtn} alt="Switch" className={`h-[30px] ${darkMode} cursor-pointer`}
+                                onClick={
+                                    () => {
+                                        document.documentElement.classList.remove("dark");
+                                        document.getElementById("slight")?.classList.remove("hidden")
+                                        setDarkMode("hidden");
+                                    }
+                                }
+                            />
+                        </div>
+
+
                         <img src={Menu} alt="menu"
                             onClick={() => setMenu("block")
                             }

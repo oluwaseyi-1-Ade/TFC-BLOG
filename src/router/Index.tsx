@@ -6,7 +6,6 @@ import Pages from "../Pages/Pages";
 import SinglePost from "../Pages/SinglePost";
 import Blog from "../Pages/Blog";
 import BlogLogin from "../Pages/BlogLogin";
-// import LoginPage from "../Pages/BlogLogin";
 
 const AppRoutes = () => {
   return (
@@ -15,7 +14,6 @@ const AppRoutes = () => {
         <Route path="" element={<Layout />}>
           <Route path="/" element={<HomePage />}></Route>
           <Route path="/blog-form" element={<Blog />}></Route>
-          {/* <Route path="/login" element={<LoginPage />}></Route> */}
           <Route path="/blog" element={<BlogLogin />}></Route>
           <Route path="/single-post" element={<SinglePost />}></Route>
           <Route path="/pages" element={<Pages />}></Route>
