@@ -16,7 +16,7 @@ import User5 from "../assets/imgs/cardImages/user5.png";
 
 const Cards = () => {
     return (
-        <div className="max-w-pageMaxWidth w-full mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 bg-white dark:bg-black">
+        <div className="max-w-pageMaxWidth w-full mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 bg-white dark:bg-[#181A2A]">
 
             {
                 cards.map((card) => (
