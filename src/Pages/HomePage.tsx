@@ -8,7 +8,7 @@ const HomePage = () => {
             <div className="max-w-pageMaxWidth mx-auto px-5">
                 <div className="relative w-full mx-auto md:h-[550px] rounded-xl md:border border-[#E8E8EA] md:bg-heroImage bg-cover bg-no-repeat">
 
-                    <div className="md:absolute bottom-[-65px] drop-shadow-lg left-5 lg:mx-0 md:left-14 z-10 md:max-w-[600px] w-full p-5 md:p-10 rounded-xl bg-white dark:bg-black border border-[#E8E8EA] font-workSans">
+                    <div className="md:absolute bottom-[-65px] drop-shadow-lg left-5 lg:mx-0 md:left-14 z-10 md:max-w-[600px] w-full p-5 md:p-10 rounded-xl bg-white dark:bg-[#181A2A] border border-[#E8E8EA] font-workSans">
                         <h3 className="w-[105px] font-medium text-sm text-white rounded-md px-[10px] py-1 bg-blueBackground">Technology</h3>
                         <h2 className="max-w-[550px] font-semibold text-xl sm:text-2xl md:text-4xl text-[#181A2A] dark:text-white mt-5">
                             The Impact of Technology on the Workplace: How Technology is Changing
