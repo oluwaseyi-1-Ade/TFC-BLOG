@@ -1,20 +1,21 @@
 import Logo from "../assets/svg/Logo.svg";
 import SearchIcon from "../assets/svg/search-icon.svg";
 import Switch from "../assets/imgs/Switch.png";
+import DarkBtn from "../assets/svg/dark-mode.svg";
 import Menu from "../assets/svg/menu.svg";
 import closeBtn from "../assets/svg/closeBtn.svg";
 import { NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 const Navbar = () => {
-  const [menu, setMenu] = useState<string>("hidden");
-  const [checked, setChecked] = useState(false);
+    const [menu, setMenu] = useState("hidden");
+    const [darkMode, setDarkMode] = useState("hidden")
 
-  useEffect(() => {
-    document.body.classList.toggle("dark");
-  }, [checked]);
+    const handleClick = () => setMenu("hidden");
 
-  const handleClick = () => setMenu("hidden");
+    // const toggleDarkMode = () => {
+    //     // document.documentElement.classList.toggle("dark");
+    // }
 
   return (
     <div className="relative">
@@ -79,51 +80,69 @@ const Navbar = () => {
               </NavLink>
             </div>
 
-            <div className="lg:flex items-center gap-10 ">
-              <div className="lg:flex hidden rounded-[5px] p-[8px] pl-[16px] bg-[#F4F4F5] gap-3"></div>
-              <input
-                type="search"
-                placeholder="Search"
-                className="max-w-[110px] w-full border-none outline-none bg-transparent font-inter text-sm"
-              />
-              <img src={SearchIcon} alt="Search-icon" />
-            </div>
-            <img
-              src={Switch}
-              alt="Switch"
-              className="h-[30px] hidden md:flex"
-            />
-          </div>
+                    <div className="lg:flex items-center gap-10 ">
+                        <div className="lg:flex hidden rounded-[5px] p-[8px] pl-[16px] bg-[#F4F4F5] gap-3">
+                            <input
+                                type="search"
+                                placeholder="Search"
+                                className="max-w-[110px] w-full border-none outline-none bg-transparent font-inter text-sm"
+                            />
+                            <img src={SearchIcon} alt="Search-icon" />
+                        </div>
+                        <div className="hidden md:flex">
+                            <img src={Switch} id="light" alt="Switch" className={`h-[30px] cursor-pointer`}
+                                onClick={
+                                    () => {
+                                        document.documentElement.classList.add("dark");
+                                        document.getElementById("light")?.classList.add("hidden")
+                                        setDarkMode("flex");
+                                    }
+                                }
+                            />
+                            <img src={DarkBtn} alt="Switch" className={`h-[35px] w-[49.64px] ${darkMode} cursor-pointer`}
+                                onClick={
+                                    () => {
+                                        document.documentElement.classList.remove("dark");
+                                        document.getElementById("light")?.classList.remove("hidden")
+                                        setDarkMode("hidden");
+                                    }
+                                }
+                            />
+                        </div>
+                    </div>
 
-          <div id="menu" className="flex gap-6 h-[35px] p-1 md:hidden">
-            <label className="inline-flex items-center mb-5 cursor-pointer">
-              <input
-                type="checkbox"
-                defaultValue=""
-                checked={checked}
-                onChange={() => setChecked(!checked)}
-                className="sr-only peer"
-              />
-              <div className="relative w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600 dark:peer-checked:bg-blue-600" />
-            </label>
+                    <div
+                        id="menu" className="flex gap-6 h-[35px] p-1 md:hidden">
 
-            {/* <img
-              src={Switch}
-              alt="Switch"
-              className="h-[30px]  cursor-pointer"
-              onClick={() => {
-                console.log("switchisclicked");
-                document.body.classList.toggle("dark");
-              }}
-            /> */}
-            <img
-              src={Menu}
-              alt="menu"
-              onClick={() => setMenu("block")}
-              className=" cursor-pointer"
-            />
-          </div>
-        </nav>
+                        <div>
+                            <img src={Switch} id="slight" alt="Switch" className={`h-[30px] cursor-pointer`}
+                                onClick={
+                                    () => {
+                                        document.documentElement.classList.add("dark");
+                                        document.getElementById("slight")?.classList.add("hidden")
+                                        setDarkMode("flex");
+                                    }
+                                }
+                            />
+                            <img src={DarkBtn} alt="Switch" className={`h-[30px] ${darkMode} cursor-pointer`}
+                                onClick={
+                                    () => {
+                                        document.documentElement.classList.remove("dark");
+                                        document.getElementById("slight")?.classList.remove("hidden")
+                                        setDarkMode("hidden");
+                                    }
+                                }
+                            />
+                        </div>
+
+
+                        <img src={Menu} alt="menu"
+                            onClick={() => setMenu("block")
+                            }
+                            className=" cursor-pointer"
+                        />
+                    </div>
+                </nav>
 
         <div
           className={`${menu}

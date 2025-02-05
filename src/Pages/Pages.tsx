@@ -22,15 +22,15 @@ const Pages = () => {
 
             {/* hero  */}
             <div className="max-w-pageMaxWidth w-full mx-auto mt-32 md:h-[450px] px-5">
-                <div id="pages-hero" className="relative w-full h-full rounded-xl p-10 md:bg-heroImage bg-cover bg-no-repeat">
-                    <div className="md:absolute bottom-10 left-10 p-5 md:p-0 rounded-xl w-full font-workSans md:bg-transparent bg-[#181A2A]">
+                <div id="pages-hero" className="relative w-full h-full rounded-xl p-0 md:p-10 md:bg-heroImage bg-cover bg-no-repeat">
+                    <div className="md:absolute bottom-10 left-10 p-5 md:p-0 rounded-xl w-full font-workSans md:bg-transparent bg-[#181A2A] dark:bg-white">
                         <h3 className="w-[105px] font-medium text-sm text-white rounded-md px-[10px] py-1 bg-blueBackground">Technology</h3>
-                        <h2 className="md:max-w-[600px] lg:max-w-[750px] w-full font-semibold text-base sm:text-xl md:text-3xl text-white mt-5">
+                        <h2 className="md:max-w-[600px] lg:max-w-[750px] w-full font-semibold text-base sm:text-xl md:text-3xl text-white dark:text-[#181A2A] mt-5">
                             The Impact of Technology on the Workplace: How Technology is Changing
                         </h2>
-                        <div className="flex items-center gap-5 text-white text-base mt-5">
+                        <div className="flex items-center gap-5 text-white dark:text-[#181A2A] text-base mt-5">
                             <p className="flex items-center gap-3">
-                                <img src={User} alt="user" className="w-[36px]" />
+                                <img src={User} alt="user" className="w-[36px] dark:bg-black p-0.5" />
                                 <span className="font-medium">Tracey Wilson</span>
                             </p>
                             <p className="font-normal">

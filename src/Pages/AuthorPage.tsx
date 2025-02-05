@@ -7,7 +7,8 @@ import Cards from "../Components/Cards";
 
 const AuthorPage = () => {
     return (
-        <>
+
+        <div className="px-5">
 
             <div className="max-w-pageMaxWidth w-full mx-auto bg-[#F6F6F7] rounded-xl p-12 font-workSans">
                 <div className="max-w-[670px] w-full mx-auto">
@@ -36,14 +37,14 @@ const AuthorPage = () => {
 
 
             <div className="max-w-pageMaxWidth w-full mx-auto mt-14 font-workSans px-5">
-                <h2 className="font-bold text-base md:text-2xl text-[#181A2A]">Latest Post</h2>
+                <h2 className="font-bold text-base md:text-2xl text-[#181A2A] dark:text-white">Latest Post</h2>
 
                 <div className="mt-10">
                     <Cards />
                 </div>
             </div>
 
-        </>
+        </div>
     )
 }
 

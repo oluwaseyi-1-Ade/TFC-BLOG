@@ -4,19 +4,19 @@ import BlogLogo from "../assets/imgs/Logo.png"
 
 const Footer = () => {
     return (
-        <div className="max-w-maxScreen w-full mt-24 bg-[#F6F6F7] mx-auto border-t border-t-[#E8E8EA]">
+        <div className="max-w-maxScreen w-full mt-24 bg-[#F6F6F7] dark:bg-[#181A2A] mx-auto border-t border-t-[#E8E8EA]">
             <div className="max-w-pageMaxWidth w-full mx-auto px-5">
 
                 {/* footer1 */}
                 <div className="w-full  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[50px] py-[30px] md:py-[64px]">
                     <div id="about" className="font-PlusJakartaSans max-w-[245px] mx-auto lg:mx-0 w-full">
-                        <h3 className="font-semibold text-lg text-[#181A2A] pb-3">About</h3>
-                        <p className="text-base font-normal text-[#696A75]">
+                        <h3 className="font-semibold text-lg text-[#181A2A] dark:text-white pb-3">About</h3>
+                        <p className="text-base font-normal text-[#696A75] dark:text-white">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                             sed do eiusmod tempor incididunt
                             ut labore et dolore magna aliqua. Ut enim ad minim veniam
                         </p>
-                        <div className="mt-5">
+                        <div className="mt-5 dark:text-white">
                             <p className="text-base font-normal"><span className="font-semibold">Email:</span>info@jstemplate.net</p>
                             <p className="text-base font-normal"><span className="font-semibold">Phone: </span>880 123 456 789</p>
                         </div>
@@ -26,23 +26,23 @@ const Footer = () => {
                         <div id="quick-link">
                             <h3 className="font-semibold text-lg text-[#181A2A]">Quick Link</h3>
                             <ul className="mt-5">
-                                <li className="py-1"><a href="#" className="font-normal text-base text-[#3B3C4A]">Home</a></li>
-                                <li className="py-1"><a href="#" className="font-normal text-base text-[#3B3C4A]">About</a></li>
-                                <li className="py-1"><a href="#" className="font-normal text-base text-[#3B3C4A]">Blog</a></li>
-                                <li className="py-1"><a href="#" className="font-normal text-base text-[#3B3C4A]">Archived</a></li>
-                                <li className="py-1"><a href="#" className="font-normal text-base text-[#3B3C4A]">Author</a></li>
-                                <li className="py-1"><a href="#" className="font-normal text-base text-[#3B3C4A]">Contact</a></li>
+                                <li className="py-1"><a href="#" className="font-normal text-base text-[#3B3C4A] dark:text-white">Home</a></li>
+                                <li className="py-1"><a href="#" className="font-normal text-base text-[#3B3C4A] dark:text-white">About</a></li>
+                                <li className="py-1"><a href="#" className="font-normal text-base text-[#3B3C4A] dark:text-white">Blog</a></li>
+                                <li className="py-1"><a href="#" className="font-normal text-base text-[#3B3C4A] dark:text-white">Archived</a></li>
+                                <li className="py-1"><a href="#" className="font-normal text-base text-[#3B3C4A] dark:text-white">Author</a></li>
+                                <li className="py-1"><a href="#" className="font-normal text-base text-[#3B3C4A] dark:text-white">Contact</a></li>
                             </ul>
                         </div>
                         <div id="category">
                             <h3 className="font-semibold text-lg text-[#181A2A]">Category</h3>
                             <ul className="mt-5">
-                                <li className="py-1"><a href="#" className="font-normal text-base text-[#3B3C4A]">Lifestyle</a></li>
-                                <li className="py-1"><a href="#" className="font-normal text-base text-[#3B3C4A]">Technology</a></li>
-                                <li className="py-1"><a href="#" className="font-normal text-base text-[#3B3C4A]">Travel</a></li>
-                                <li className="py-1"><a href="#" className="font-normal text-base text-[#3B3C4A]">Business</a></li>
-                                <li className="py-1"><a href="#" className="font-normal text-base text-[#3B3C4A]">Economy</a></li>
-                                <li className="py-1"><a href="#" className="font-normal text-base text-[#3B3C4A]">Sports</a></li>
+                                <li className="py-1"><a href="#" className="font-normal text-base text-[#3B3C4A] dark:text-white">Lifestyle</a></li>
+                                <li className="py-1"><a href="#" className="font-normal text-base text-[#3B3C4A] dark:text-white">Technology</a></li>
+                                <li className="py-1"><a href="#" className="font-normal text-base text-[#3B3C4A] dark:text-white">Travel</a></li>
+                                <li className="py-1"><a href="#" className="font-normal text-base text-[#3B3C4A] dark:text-white">Business</a></li>
+                                <li className="py-1"><a href="#" className="font-normal text-base text-[#3B3C4A] dark:text-white">Economy</a></li>
+                                <li className="py-1"><a href="#" className="font-normal text-base text-[#3B3C4A] dark:text-white">Sports</a></li>
                             </ul>
                         </div>
                     </div>
@@ -64,16 +64,16 @@ const Footer = () => {
                 {/* footer2 */}
                 <div className="w-fit lg:w-full mx-auto border-t border-t-[#DCDDDF] py-8 lg:flex lg:justify-between lg:items-center">
                     <div className="flex gap-[10px] items-center mb-5 ">
-                        <img src={BlogLogo} alt="blog-logo" className="h-[48px]" />
+                        <img src={BlogLogo} alt="blog-logo" className="h-[48px] dark:h-[56px] dark:p-1 dark:bg-white" />
                         <div>
-                            <p className="font-normal text-xl text-[#141624]">Meta<span className="font-extrabold">Blog</span></p>
-                            <p className="text-[#3B3C4A] text-base font-normal">© JS Template 2023. All Rights Reserved.</p>
+                            <p className="font-normal text-xl text-[#141624] dark:text-white">Meta<span className="font-extrabold">Blog</span></p>
+                            <p className="text-[#3B3C4A] dark:text-white text-base font-normal">© JS Template 2023. All Rights Reserved.</p>
                         </div>
                     </div>
                     <ul className="flex gap-5 w-fit mx-auto lg:mx-0">
-                        <li><a href="" className="font-normal text-base text-[#3B3C4A]">Terms of Use</a></li>
-                        <li><a href="" className="font-normal text-base text-[#3B3C4A]">Privacy Policy</a></li>
-                        <li><a href="" className="font-normal text-base text-[#3B3C4A]">Cookie Policy</a></li>
+                        <li><a href="" className="font-normal text-base text-[#3B3C4A] dark:text-white">Terms of Use</a></li>
+                        <li><a href="" className="font-normal text-base text-[#3B3C4A] dark:text-white">Privacy Policy</a></li>
+                        <li><a href="" className="font-normal text-base text-[#3B3C4A] dark:text-white">Cookie Policy</a></li>
 
                     </ul>
                 </div>

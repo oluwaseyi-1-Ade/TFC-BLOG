@@ -9,7 +9,7 @@ import Navbar from './Navbar';
 const Layout = () => {
 
     return (
-        <div className={`min-h-screen w-full mx-auto flex flex-col`}>
+        <div className={`min-h-screen w-full mx-auto flex flex-col dark:bg-[#181A2A] bg-white`}>
             <Navbar />
 
             <div className="flex-grow mt-[120px]">
